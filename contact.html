@@ -16,7 +16,6 @@
     href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap"
     rel="stylesheet"
   />
-
   <link rel="stylesheet" href="css/style.css" />
   <script defer src="script.js"></script>
 </head>
@@ -43,61 +42,78 @@
 
   <main id="main">
     <section class="section">
-      <div class="container page-intro reading-width">
+      <div class="container narrow page-hero">
         <div class="section-label">
           <span>Contact</span>
         </div>
-
-        <h1>I prefer communication that is clear, direct, and professional.</h1>
+        <h1>Clear, direct, and professional communication works best for me.</h1>
         <p class="lead">
-          If you would like to connect regarding internships, collaboration, academic discussion,
-          or professional networking, email is the best way to reach me.
+          If you would like to connect regarding internships, technical learning, professional networking,
+          or future opportunities, email and LinkedIn are the best channels.
         </p>
       </div>
     </section>
 
     <section class="section section--tight">
       <div class="container contact-grid">
-        <article class="card card--featured">
-          <p class="eyebrow">Direct Contact</p>
-          <h3 class="card-title">Best way to reach me</h3>
+        <article class="card card--accent">
+          <p class="meta">Direct Channels</p>
+          <h3>Reach me here</h3>
 
-          <div class="detail-list" style="margin-top: 1rem;">
-            <div class="detail-row">
+          <div class="quick-info" style="margin-top: 1rem;">
+            <div class="quick-row">
               <span class="muted">Email</span>
               <strong><a href="mailto:arisroy7875@gmail.com">arisroy7875@gmail.com</a></strong>
             </div>
-            <div class="detail-row">
+            <div class="quick-row">
               <span class="muted">LinkedIn</span>
               <strong><a href="https://www.linkedin.com/in/atharva-harode-336a64334/" target="_blank" rel="noopener noreferrer">View Profile</a></strong>
             </div>
-            <div class="detail-row">
+            <div class="quick-row">
               <span class="muted">GitHub</span>
               <strong><a href="https://github.com/atharva787590" target="_blank" rel="noopener noreferrer">View Profile</a></strong>
             </div>
-            <div class="detail-row">
+            <div class="quick-row">
               <span class="muted">Location</span>
               <strong>Nagpur, Maharashtra, India</strong>
             </div>
           </div>
+
+          <div class="btn-row">
+            <a class="btn btn--primary" href="mailto:arisroy7875@gmail.com">Email Me</a>
+            <a class="btn btn--secondary" href="https://www.linkedin.com/in/atharva-harode-336a64334/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a class="btn btn--secondary" href="https://github.com/atharva787590" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
         </article>
 
-        <article class="card">
-          <p class="eyebrow">Professional Context</p>
-          <h3 class="card-title">Current direction</h3>
-          <p class="contact-note">
-            I am interested in opportunities that help me grow in software development, Java programming,
-            core computer science, and technology-driven problem solving.
+        <article class="form-card">
+          <p class="meta">Connection Area</p>
+          <h3>Future-ready contact form</h3>
+          <p class="card-text">
+            This section is ready as a clean connection area. It currently uses a simple mailto flow and can be upgraded in a later task if needed.
           </p>
 
-          <div class="button-row">
-            <a class="button button--primary" href="mailto:arisroy7875@gmail.com">Email Me</a>
-            <a class="button button--secondary" href="https://www.linkedin.com/in/atharva-harode-336a64334/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a class="button button--secondary" href="https://github.com/atharva787590" target="_blank" rel="noopener noreferrer">GitHub</a>
-          </div>
+          <form action="mailto:arisroy7875@gmail.com" method="post" enctype="text/plain">
+            <label for="name">
+              Name
+              <input id="name" name="name" type="text" placeholder="Enter your name" />
+            </label>
 
-          <div class="note-box" style="margin-top: 1.25rem;">
-            This portfolio intentionally keeps communication simple: email, LinkedIn, and GitHub only.
+            <label for="email">
+              Email
+              <input id="email" name="email" type="email" placeholder="Enter your email" />
+            </label>
+
+            <label for="message">
+              Message
+              <textarea id="message" name="message" placeholder="Write your message"></textarea>
+            </label>
+
+            <button class="btn btn--primary" type="submit">Send via Email</button>
+          </form>
+
+          <div class="note-box" style="margin-top: 1rem;">
+            If your browser does not open an email client, please use the direct Email or LinkedIn buttons.
           </div>
         </article>
       </div>

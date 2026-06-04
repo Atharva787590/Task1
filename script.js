@@ -3,7 +3,7 @@ const themeToggle = document.getElementById("theme-toggle");
 const navToggle = document.getElementById("nav-toggle");
 const siteNav = document.getElementById("site-nav");
 
-const THEME_KEY = "atharva-theme";
+const THEME_KEY = "atharva-portfolio-theme";
 
 function getSystemTheme() {
   return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
