@@ -31,7 +31,6 @@
 
   --transition-fast: 300ms ease;
   --transition-base: 500ms ease;
-  --transition-slow: 700ms ease;
 }
 
 :root[data-theme="dark"] {
@@ -228,11 +227,11 @@ h2 {
 }
 
 h1 {
-  font-size: clamp(2.5rem, 6vw, 4.9rem);
+  font-size: clamp(2.45rem, 6vw, 4.6rem);
 }
 
 h2 {
-  font-size: clamp(1.9rem, 4vw, 3rem);
+  font-size: clamp(1.9rem, 4vw, 2.9rem);
 }
 
 h1 em,
@@ -250,7 +249,7 @@ h4 {
 }
 
 .lead {
-  font-size: clamp(1.05rem, 1.7vw, 1.16rem);
+  font-size: clamp(1.05rem, 1.7vw, 1.14rem);
   color: var(--muted);
   max-width: 64ch;
 }
@@ -344,7 +343,6 @@ h4 {
 .btn-row,
 .badge-list,
 .card-links,
-.quick-links,
 .hero-tags {
   display: flex;
   flex-wrap: wrap;
@@ -427,12 +425,13 @@ h4 {
 .hero-shell {
   display: grid;
   gap: 2rem;
-  align-items: center;
+  align-items: stretch;
 }
 
 .hero-copy {
   display: grid;
   gap: 1rem;
+  align-content: center;
 }
 
 .identity-lockup {
@@ -482,9 +481,12 @@ h4 {
 .hero-side {
   padding: 1.5rem;
   background:
-    radial-gradient(circle at top right, rgba(194, 123, 102, 0.12), transparent 24%),
-    linear-gradient(135deg, rgba(140, 154, 132, 0.08), rgba(220, 207, 194, 0.16)),
+    radial-gradient(circle at top right, rgba(194, 123, 102, 0.12), transparent 22%),
+    linear-gradient(135deg, rgba(140, 154, 132, 0.08), rgba(220, 207, 194, 0.14)),
     var(--surface);
+  display: grid;
+  gap: 1rem;
+  align-content: start;
 }
 
 .hero-arch {
@@ -493,25 +495,25 @@ h4 {
   background:
     linear-gradient(180deg, rgba(220, 207, 194, 0.28), rgba(140, 154, 132, 0.08)),
     var(--surface-soft);
-  padding: 2rem 1.5rem;
-  min-height: 310px;
+  padding: 2rem 1.4rem;
+  min-height: 250px;
   display: grid;
   align-content: center;
   gap: 1rem;
-  box-shadow: var(--shadow-lg);
+  box-shadow: var(--shadow-md);
+  text-align: center;
 }
 
 .hero-side-grid {
   display: grid;
   gap: 1rem;
-  margin-top: 1rem;
 }
 
 .side-chip {
   padding: 1rem;
   border-radius: 22px;
   border: 1px solid var(--border);
-  background: rgba(255, 255, 255, 0.65);
+  background: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(8px);
   box-shadow: var(--shadow-sm);
 }
@@ -525,7 +527,6 @@ h4 {
 .skill-grid,
 .project-grid,
 .cert-grid,
-.timeline-grid,
 .contact-grid,
 .method-grid {
   display: grid;
@@ -557,7 +558,7 @@ h4 {
   display: block;
   font-family: var(--font-sans);
   font-weight: 700;
-  font-size: clamp(1.5rem, 2vw, 2.1rem);
+  font-size: clamp(1.45rem, 2vw, 2rem);
   line-height: 1;
   letter-spacing: -0.03em;
   margin-bottom: 0.45rem;
@@ -747,7 +748,6 @@ textarea {
   }
 
   .skill-grid,
-  .timeline-grid,
   .contact-grid,
   .method-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
